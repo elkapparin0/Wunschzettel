@@ -1,0 +1,225 @@
+:root{
+  --bg1:#0b1020;
+  --bg2:#0f1730;
+  --card:#121a33cc;
+  --stroke:#ffffff1a;
+  --text:#eaf0ff;
+  --muted:#b9c4e6;
+  --accent:#7c5cff;
+  --accent2:#2ee9a6;
+  --danger:#ff4d6d;
+  --shadow: 0 18px 60px #00000066;
+  --radius: 18px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 500px at 20% 10%, #7c5cff33, transparent 60%),
+    radial-gradient(700px 500px at 90% 30%, #2ee9a622, transparent 55%),
+    linear-gradient(160deg, var(--bg1), var(--bg2));
+}
+
+.app{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+}
+
+.header{
+  display:flex;
+  gap:18px;
+  align-items:stretch;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+
+.brand{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding: 16px 18px;
+  background: linear-gradient(180deg, #ffffff10, #ffffff06);
+  border:1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  flex: 1 1 420px;
+}
+
+.logo{
+  width:48px;
+  height:48px;
+  border-radius: 14px;
+  display:grid;
+  place-items:center;
+  font-size: 22px;
+  background: linear-gradient(135deg, #7c5cff, #2ee9a6);
+  box-shadow: 0 10px 24px #00000055;
+}
+
+h1{
+  margin:0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.subtitle{
+  margin:4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.playercard{
+  min-width: 220px;
+  padding: 16px 18px;
+  background: linear-gradient(180deg, #ffffff10, #ffffff06);
+  border:1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.label{
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: .2px;
+}
+
+.player{
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card{
+  padding: 18px;
+  border: 1px solid var(--stroke);
+  border-radius: calc(var(--radius) + 2px);
+  background: linear-gradient(180deg, #ffffff12, #ffffff06);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.card-header h2{
+  margin: 0;
+  font-size: 18px;
+}
+.muted{ color: var(--muted); }
+.small{ font-size: 12px; }
+
+.wordbox{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px dashed #ffffff33;
+  background: #0a102499;
+
+  max-height: 220px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.word{
+  min-height: 54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size: clamp(18px, 3.5vw, 28px);
+  font-weight: 800;
+  letter-spacing: .4px;
+  padding: 6px 10px;
+}
+
+.actions{
+  margin-top: 16px;
+  display:flex;
+  gap: 12px;
+  flex-wrap:wrap;
+  position: sticky;
+  bottom: 16px;
+}
+
+.btn{
+  appearance:none;
+  border:1px solid var(--stroke);
+  background:#ffffff0c;
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 14px;
+  cursor:pointer;
+  font-weight: 700;
+  letter-spacing: .2px;
+  transition: transform .08s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+  flex: 1 1 220px;
+}
+
+.btn:hover{
+  background:#ffffff14;
+  border-color:#ffffff2a;
+}
+
+.btn:active{
+  transform: translateY(1px) scale(.99);
+}
+
+.btn.primary{
+  border: none;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  box-shadow: 0 14px 30px #00000066;
+}
+
+.btn.primary:hover{
+  box-shadow: 0 18px 36px #00000077;
+}
+
+.btn.ghost{
+  background: transparent;
+}
+
+.debug{
+  margin-top: 12px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  justify-content:center;
+  opacity:.9;
+}
+
+.badge{
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #ffffff2a;
+  background:#ffffff10;
+  color: var(--muted);
+}
+
+.debugtext{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  color: #d6ddff;
+}
+
+.footer{
+  margin-top: 14px;
+  padding: 0 6px;
+}
+
+code{
+  background:#ffffff10;
+  border:1px solid #ffffff1a;
+  padding:2px 6px;
+  border-radius: 8px;
+}
