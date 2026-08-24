@@ -1,100 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Wunschzettel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infos zum Wunschzettel</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="wunschzettel.js" defer></script>
+  <script src="startseite.js" defer></script>
 </head>
 <body>
+  <main class="page page--intro">
+    <section class="card intro-card">
+      <p class="eyebrow">Wunschzettel</p>
+      <h1>Kurze Hinweise</h1>
 
-  <h1>Wunschzettel</h1>
+      <p>
+        Bei den meisten Sachen ist ein Link hinterlegt, der gerne genutzt werden kann.
+      </p>
 
-  <p>
-    <h3>Abseits von Büchern</h3>
-    <li>
-      <input type="checkbox"> USB-c zu USB-c Ladekabel inkl. Stecker ~10-20€ 
-    </li>
-    <li>
-      <input type="checkbox"> <a href="https://www.amazon.de/Toploader-Sammelkarten-Album-Premium-PU-Cover-Toploader-Sammelalbum/dp/B0FWBZ4SND?dib=eyJ2IjoiMSJ9.KpJxBkXdPQKRRSGS4NqB3lMO9tr8hWKPI9GNti3Vzy_xLWkkjWvMflHlwCiiMeqWMv5D5SDvU2-GlN5CiTyMy9ONTGaQLS8p2jzfIFLkkH1xZ7Z1CXVyvgTX_9fPC5sZZsyW-kql88fa8um9mNaQ04CqFKjTzat5INmr-HTVmiXeGDjp5dnJhW4ETqTq0jHo3PQGYr3gV6Aca9nxH_7lkPv0sJE7LK0-MNwEN1dQGbJC9PMBX5xz_C2plYAlkg1ZwhmjLwdc1dlwMkZ1SFKy6qGudyHPGGhWQa6rfG3L4Tg.Uu86gYOsbK08A5drpC_UyJPKGmhbuOOfyMs3LS2eIqk&dib_tag=se&keywords=toploader%2Bbinder&qid=1781601465&sr=8-6&th=1" target="_blank"> Pokemon Toploader Binder (nicht übermäßig groß) ~30€+-</a>
-    </li>
-  </p>
+      <section class="info-box" aria-labelledby="buecher-hinweise">
+        <h2 id="buecher-hinweise">Bücher</h2>
+        <ul class="note-list">
+          <li>Am besten so bestellen, wie es im Link angegeben ist.</li>
+          <li>Bitte Taschenbuch / Paperback bevorzugen.</li>
+          <li>Zustand sollte bitte nicht allzu schlecht sein</li>
+          <li>Cixin Liu bitte auf Deutsch, den Rest gerne auf Englisch.</li>
+          <li>Falls ein Buch abseits der Liste bestellt wird: Originalsprache, wenn Englisch, ansonsten Deutsch.</li>
+          <li>Auch bei anderen Shops bitte möglichst an die verlinkte Ausgabe halten.</li>
+        </ul>
+      </section>
 
-  <p>
-    <h3>Habe ich schon gelesen, aber brauche Physische Bücher</h3>
-    <li>
-      <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1038189458" target="_blank"> Die Drei Sonnen von Cixin Liu 18€</a>
-    </li>
-    <li>
-      <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1039481865" target="_blank"> Der Dunkle Wald von Cixin Liu 18€</a>
-    </li>
-  </p>
+      <p class="important-note">
+        Bitte alles abhaken, was geschenkt werden soll, damit nichts doppelt bestellt wird.
+      </p>
 
-  <h3>Weitere Bücher(die ich noch nicht gelesen habe)</h3>
-
-  
-  <li>
-   <input type="checkbox"> Die Farseer Trilogie ~40€
-    <ul>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1033025162" target="_blank">Band 1 Assassins Apprentice ~13€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1033025164" target="_blank"> Band 2 Royal Assassin ~14€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1033025166" target="_blank">Band 3 Assassins Quest ~14€</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-   <input type="checkbox"><a href="https://www.thalia.de/shop/home/artikeldetails/A1035151431" target="_blank"> Die Mistborn Trilogie ~37€ (Auf Blau Weißes Cover achten)</a>
-    <ul>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1007835165" target="_blank">Band 1 Mistborn ~15€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1008256740" target="_blank"> Band 2 The Well of Ascension ~16€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1008663283" target="_blank">Band 3 The Hero of Ages ~16€</a>
-      </li>
-    </ul>
-  </li>
-  <li>
-   <input type="checkbox"><a href="https://www.thalia.de/shop/home/artikeldetails/A1021345737" target="_blank"> Das Lied von Eis und Feuer (aka Game of Thrones)</a>
-    <ul>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1003177302" target="_blank">Band 1 A Game of Thrones ~10-20€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1018642837" target="_blank"> Band 2 A Clash of Kings ~13€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1001451757" target="_blank">Band 3 A Storm of Swords ~10€</a>
-      </li>
-      <li>
-      <input type="checkbox"> Band 4 und 5
-    </li>
-    </ul>
-  </li>
-
-
-    <li>
-    Weitere:
-    <ul>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1040273490" target="_blank"> Empire of Silence (Suneater-Serie Band 1) 13€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1063739533" target="_blank"> Empire of the Vampire Band 1. 10€</a>
-      </li>
-      <li>
-        <input type="checkbox"> <a href="https://www.thalia.de/shop/home/artikeldetails/A1077316697" target="_blank">Dungeon Crawler Carl Band 2 (Band 1 habe ich schon): Carls Doomsday Scenario 17€ </a>
-      </li>
-    </ul>
-  </li>
-  
-
+      <button id="btnStart" class="button" type="button">Zum Wunschzettel</button>
+    </section>
+  </main>
 </body>
 </html>
