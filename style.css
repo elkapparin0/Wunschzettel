@@ -27,9 +27,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(141, 92, 246, 0.18), transparent 32rem),
-    linear-gradient(135deg, #f9f5ef 0%, var(--bg) 100%);
+  background: #797985;
 }
 
 body::before {
@@ -37,8 +35,7 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+
   background-size: 38px 38px;
 }
 
@@ -209,6 +206,7 @@ button {
   box-shadow: 0 12px 24px rgba(111, 62, 220, 0.3);
   cursor: pointer;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+  margin: auto;
 }
 
 button:hover,
@@ -272,4 +270,10 @@ button:active {
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
+
  }
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    
+  }
