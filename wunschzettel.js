@@ -10,7 +10,7 @@ import {
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDYtppjxzZStmyR8bZxC86AGoTai0_Hlxo",
+  
     authDomain: "wunschzettel-bc7eb.firebaseapp.com",
     projectId: "wunschzettel-bc7eb",
     storageBucket: "wunschzettel-bc7eb.firebasestorage.app",
