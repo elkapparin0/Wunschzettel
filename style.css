@@ -252,3 +252,24 @@ button:active {
   color: var(--muted);
   text-decoration: line-through;
 }
+
+.wish-item-book {
+  background: #fab9bd;
+  border-color: #000000;
+}
+
+.wish-item-dailyL {
+  background: #98bfe4;
+  border-color: #000000;
+}
+
+.wish-item-TT {
+  background: #8ce7a9;
+  border-color: #000000;
+}
+
+ h1 {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+ }
