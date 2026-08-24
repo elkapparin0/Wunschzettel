@@ -277,3 +277,29 @@ button:active {
     font-size: 30px;
     
   }
+  .wish-item-book2 {
+  background: #fab9bd;
+  border-color: #000000;
+  text-align: center;
+}
+
+.wish-item-dailyL2 {
+  background: #98bfe4;
+  border-color: #000000;
+  text-align: center;
+}
+
+.wish-item-TT2 {
+  background: #8ce7a9;
+  border-color: #000000;
+  text-align: center;
+}
+
+hr {
+  background: #000000;
+  color: #000000;
+  height: 2px;
+  border: none;
+  margin: 20px;
+
+}
