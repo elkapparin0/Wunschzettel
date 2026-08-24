@@ -49,6 +49,12 @@ checkboxes.forEach((checkbox) => {
 
   // Änderung der Checkbox in Firebase speichern
   checkbox.addEventListener("change", async () => {
+   
+    if (!checkbox.checked) {
+    checkbox.checked = true;
+    alert("Dieser Wunsch wurde bereits reserviert und kann nicht zurückgenommen werden.");
+    return;
+  }
 
     try {
 
