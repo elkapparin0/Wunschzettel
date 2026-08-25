@@ -44,6 +44,11 @@ checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     }
 
+    const listItem = checkbox.closest("li")
+    if (listItem){
+      listItem.style.display = checkbox.checked ? "none" : "";
+    }
+
   });
 
 
