@@ -24,6 +24,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 
+
 const checkboxes = document.querySelectorAll(
   'input[type="checkbox"][data-id]'
 );
